@@ -16,7 +16,7 @@
                           <th>Description</th>
                           <th></th>
                       </tr>
-                      <?php $count=1; ?>
+                      <?php $count=1;  ?>
                       
                       @foreach($departments as $key => $value)
                         <tr>
