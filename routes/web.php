@@ -20,6 +20,7 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('department','HomeController@showDepartment')->name('department');
-Route::get('department/add','HomeController@addDepartmentForm');
-Route::post('department','DepartmentController@addDepartment');
+Route::get('department','DepartmentController@index');
+Route::get('department/create','DepartmentController@create');
+Route::get('department/{id}','DepartmentController@show');
+Route::post('department','DepartmentController@store');
